@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.083" timestamp="2021-04-24T18:59:46.873515" hostname="DESKTOP-3GDDE38"><testcase classname="tests.test_accum" name="test_accumulator_init" time="0.001" /><testcase classname="tests.test_accum" name="test_accumulator_add_one" time="0.001" /><testcase classname="tests.test_accum" name="test_accumulator_add_three" time="0.001" /><testcase classname="tests.test_accum" name="test_accumulator_add_twice" time="0.001"><failure message="assert 2 == 99&#10; +  where 2 = &lt;stuff.accum.Accumulator object at 0x000001F2880A8A00&gt;.count">accum = &lt;stuff.accum.Accumulator object at 0x000001F2880A8A00&gt;
+
+    def test_accumulator_add_twice(accum):
+        accum.add()
+        accum.add()
+&gt;       assert accum.count == 99
+E       assert 2 == 99
+E        +  where 2 = &lt;stuff.accum.Accumulator object at 0x000001F2880A8A00&gt;.count
+
+tests\test_accum.py:41: AssertionError</failure></testcase><testcase classname="tests.test_accum" name="test_accumulator_cannot_set_count_directly" time="0.001" /></testsuite></testsuites>
